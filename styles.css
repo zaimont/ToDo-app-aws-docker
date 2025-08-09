@@ -1,0 +1,202 @@
+ /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #fdf6f0, #fbe9f7);
+      font-family: 'Poppins', sans-serif;
+      color: #4a3c65;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 15px;
+    }
+
+    .container {
+      background: white;
+      max-width: 480px;
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(207, 147, 172, 0.3);
+      padding: 30px 35px 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Encabezado con fuente cursiva */
+    h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 3.2rem;
+      margin: 0 0 15px;
+      color: #bd5888;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 3px #f2d7e7;
+    }
+
+    /* Subtítulo coqueto */
+    p.subtitle {
+      font-weight: 300;
+      font-size: 1rem;
+      color: #9c759b;
+      margin-top: 0;
+      margin-bottom: 30px;
+      letter-spacing: 0.7px;
+    }
+
+    /* Formulario */
+    form {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    input#task-input {
+      flex-grow: 1;
+      padding: 14px 20px;
+      border-radius: 40px;
+      border: 2px solid #d9a7c7;
+      font-size: 1.1rem;
+      color: #4a3c65;
+      transition: border-color 0.3s ease;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input#task-input::placeholder {
+      color: #c8a7bf;
+      font-style: italic;
+    }
+
+    input#task-input:focus {
+      outline: none;
+      border-color: #bd5888;
+      box-shadow: 0 0 6px #e9c4d6;
+    }
+
+    button {
+      background: #bd5888;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 3px 8px rgba(189, 88, 136, 0.5);
+    }
+    button:hover {
+      background: #9c4371;
+      box-shadow: 0 5px 12px rgba(156, 67, 113, 0.6);
+    }
+
+    /* Lista */
+    ul#tasks-list {
+      list-style: none;
+      padding: 0;
+      max-height: 360px;
+      overflow-y: auto;
+      text-align: left;
+      border-top: 1px solid #f2d7e7;
+      border-bottom: 1px solid #f2d7e7;
+      margin-bottom: 30px;
+    }
+    ul#tasks-list li {
+      background: #f9e8f2;
+      padding: 14px 20px;
+      margin: 14px 0;
+      border-radius: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #6f496e;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 8px rgba(210, 173, 198, 0.3);
+      transition: background 0.3s ease;
+    }
+    ul#tasks-list li:hover {
+      background: #e7cee6;
+    }
+    ul#tasks-list li span.task-text {
+      flex-grow: 1;
+      word-break: break-word;
+      padding-right: 10px;
+    }
+    ul#tasks-list li button {
+  min-width: 45px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #bd5888;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+   ul#tasks-list li button:hover {
+  background-color: #9c4371;
+}
+
+    /* Media: gifs o imágenes en secciones */
+    .media-container {
+      margin-bottom: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(189, 88, 136, 0.25);
+    }
+    .media-container img, .media-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Ajuste responsive para el formulario */
+@media (max-width: 480px) {
+  form {
+    flex-direction: column; /* Poner input y botón en columna */
+    gap: 15px; /* Más espacio entre input y botón */
+  }
+
+  button {
+    width: 100%; /* Botón ocupa todo el ancho */
+    padding: 14px 0; /* Ajuste de padding para ancho completo */
+  }
+
+  input#task-input {
+    width: 100%; /* Input ocupa todo el ancho */
+  }
+}
+
+@media (max-width: 600px) {
+  button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;       /* espacio arriba y abajo para separar */
+    border-radius: 12px; /* menos redondeado */
+    padding: 12px 0;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(189, 88, 136, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  button:first-child {
+    margin-top: 12px; /* margen extra para el primer botón */
+  }
+}
+
+
+    /* Footer coqueto */
+    footer {
+      text-align: center;
+      color: #9c759b;
+      font-style: italic;
+      font-weight: 300;
+      margin-top: 20px;
+      user-select: none;
+      font-size: 0.9rem;
+    }
