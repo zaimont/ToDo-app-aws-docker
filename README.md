@@ -30,19 +30,19 @@
 
 ## 📸 Vista previa
 
-> *(Aquí puedes agregar capturas de pantalla en la carpeta `images/` y enlazarlas)*
+
 
 ![Captura principal](img/mainScreen.png)
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Instalación
 
-### 1️⃣ Ejecutar localmente
+### Ejecutar localmente
 
-```bash
+
 # Clonar este repositorio
-git clone https://github.com/tu-usuario/todo-app.git
+git clone https://github.com/zaimont/ToDo-app-aws-docker.git
 
 # Abrir el archivo index.html en tu navegador
 
